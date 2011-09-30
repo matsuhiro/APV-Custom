@@ -16,7 +16,7 @@ tar xvf $JPEGSRC
 tar xvf $MUPDF-source.tar.gz
 tar xvf $OPENJPEG.tgz
 tar xvf $JBIG2DEC.tar.gz
-unzip -f $IPAFONT.zip
+unzip $IPAFONT.zip
 cp $OPENJPEG/libopenjpeg/*.[ch] ../jni/openjpeg/
 echo '#define PACKAGE_VERSION' '"'$OPENJPEG'"' > ../jni/openjpeg/opj_config.h
 cp $JPEGDIR/*.[ch] ../jni/jpeg/
